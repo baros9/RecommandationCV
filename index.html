@@ -82,16 +82,46 @@
                             <input type="file" id="offre" name="offre" multiple>
                           </div>
                         </div>
+                        <!-- <div>
+                          <legend>Sélectionnez les CVs</legend>
+                          <input type="file" multiple directory webkitdirectory allowdirs/>
+                        </div> -->
+                        
                         <div>
-                          <label for="cv">Choisir un cv </label>
+                          <label for="CV">Sélectionnez CV</label>
                           <div class="upload-wrapper">
                             <span class="las la-upload"></span>
-                            <input type="file" id="cv" name="cv" multiple>
+                            <input type="file" multiple directory webkitdirectory allowdirse>
                           </div>
                         </div>
-                      </div>
+
+
+
+
+                        <pre class="output"></pre>
+                       <script src="uppie.js"></script>
+                       <script>
+                          var uppie = new Uppie();
+
+                          function output(event, formData, files) {
+                            document.querySelector(".output").textContent = files.join("\n");
+                            console.info("event:", event);
+                            console.info("formData:", formData.getAll("files[]"));
+                            // console.info("files:", files);
+                           }
+
+      /* used on an input element */
+                                 uppie(document.querySelectorAll("input"), output);
+
+      /* used on a dropzone element */
+      // uppie(document.documentElement, output);
+
+                      </script>
+
+
+
                       <div class="input-btn">
-                        <button>Submit</button>
+                        <button>Selection</button>
                       </div>
                      </form>
                   </div>
