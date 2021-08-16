@@ -103,7 +103,12 @@ header label span {
   border: none;
 }
 
+.upload {
+    display: flex;
+}
+
 .upload-wrapper {
+  margin: 1rem;
   border: 1px solid #ccc;
   border-radius: 30px;
   height: 50%;
@@ -121,6 +126,17 @@ header label span {
   outline: none;
   border: none;
 }
+.input-content {
+    display: flex;
+}
+.input-btn button {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    border: 1px solid var(--secondary-color);
+  }
 
 .user-wrapper {
   display: flex;
@@ -343,6 +359,9 @@ td status {
     }
 
     .search-wrapper {
+        display: none;
+    }
+    label{
         display: none;
     }
 }
