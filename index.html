@@ -1,17 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <title>RecommadationCV</title>
-</head>
-<body>
-    
-</body>
-</html>l
+  </head>
+  <body>
+      <input type="checkbox" name="nav-toggle" id="nav-toggle">
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class="la la-address-card-o"></span><span>RecommadationCV</span> </h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="" class="active-card"
+              ><span class="las la-chalkboard"></span><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-users"></span><span>Employés</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-clipboard-list"></span><span>Offres</span></a
+            >
+          </li>
+          <li>
+            <a href=""><span class="las la-address-card"></span><span>Demades</span></a>
+          </li>
+          <li>
+            <a href=""><span class="las la-list"></span><span>Tous les CV</span></a>
+          </li>
+          <li>
+            <a href=""><span class="las la-list"></span><span>Jobs</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+          <h2>
+              <label for="nav-toggle"><span class="las la-bars"></span></label>
+                Dashboard
+          </h2>
+        <div class="search-wrapper">
+            <span class="las la-search"></span>
+            <input type="search" placeholder="Rechercher ici">
+        </div>
+        <div class="user-wrapper">
+            <i class="las la-user-tie la-3x"></i>
+            <div>
+                <h4>Abdoulaye</h4>
+                <small>Administrateur</small>
+            </div>
+        </div>
+      </header>
+      <main>
+          <!-- <div class="landing">
+              <div class="landing-text">
+                  <h2>Meilleurs profil pour votre entreprise en quelques clics</h2>
+              </div>
+          </div> -->
+          <div class="upload">
+
+              <div class="upload-wrapper">
+                <span class="las la-upload"></span>
+                <input type="file" placeholder="Selectionner un fichier" multiple directory webkitdirectory allowdirs>
+            </div>
+              <div class="upload-wrapper">
+                <span class="las la-upload"></span>
+                <input type="file" placeholder="Selectionner un fichier" multiple directory webkitdirectory allowdirs>
+            </div>
+          </div>
+          <!-- <input type="file" multiple directory webkitdirectory allowdirs/> -->
+          <div class="cards">
+              <div class="card-single">
+                  <div>
+                      <h1>75</h1>
+                      <span>Demandes</span>
+                  </div>
+                  <div>
+                      <span class="las la-file-alt"></span>
+                  </div>
+              </div>
+              <div class="card-single">
+                  <div>
+                      <h1>50</h1>
+                      <span>Offres</span>
+                  </div>
+                  <div>
+                      <span class="las la-list"></span>
+                  </div>
+              </div>
+              <div class="card-single">
+                  <div>
+                      <h1>49</h1>
+                      <span>Acceptés</span>
+                  </div>
+                  <div>
+                      <span class="las la-user-check"></span>
+                  </div>
+              </div>
+              <div class="card-single">
+                  <div>
+                      <h1>105</h1>
+                      <span>Employés</span>
+                  </div>
+                  <div>
+                      <span class="las la-users"></span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="recent-grid">
+              <div class="projects">
+                  <div class="card">
+                      <div class="card-header">
+                            <h3>Profils récents</h3>
+                            <button>Voir plus <span class="las la-arrow-right"></span></button>
+                      </div>
+                      <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>Profil</td>
+                                            <td>Départment</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Développeur</td>
+                                            <td>Développement Web</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                en progrès
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sysadmin</td>
+                                            <td>Administration Système</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                accepté
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Accueil</td>
+                                            <td>Service commercial</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                en progrès
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Expert Markting</td>
+                                            <td>Service Markting</td>
+                                            <td>
+                                                <span class="status"></span>
+                                                accepté
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+    </div>
+  </body>
+</html>
